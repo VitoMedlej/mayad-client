@@ -8,10 +8,10 @@ export async function GET(req : NextRequest, res : NextApiResponse) {
 try {
 
     const ProductsCollection = await client
-        .db("NATURE")
+        .db("CMPS")
         .collection("Products");
     let featuredProducts : any = [];
-    let products : any = []
+    // let products : any = []
 
     const featuredProductsQuery = await ProductsCollection
         // .find({isFeatured: true})
