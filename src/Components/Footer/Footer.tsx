@@ -57,7 +57,7 @@ const Footer = () => (
 
             <li><a href="https://www.instagram.com/designcompasslb/" target="_blank" rel="noreferrer" >@design__compass</a></li>
             <li><a href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`} rel="noreferrer" target='_blank' >+{process.env.NEXT_PUBLIC_WA}</a></li>
-            <li>+96121788484</li>
+            <li style={{color:'rgba(38,38,38,.816)'}}>+96121788484</li>
             {/* <li><a href={`http://tiktok.com/@thecraftroomlb`} rel="noreferrer" target='_blank' >TikTok</a></li> */}
           </ul>
         </div>
