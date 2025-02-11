@@ -8,7 +8,7 @@ import {CiFacebook,CiInstagram,CiLinkedin} from 'react-icons/ci'
 const sm = [
     {
         Icon:'https://images.squarespace-cdn.com/content/v1/56e2e0c520c6472a2586add2/1615388332386-LFQRQFE53FIOLDRNADTY/2.png',
-        href:'https://www.instagram.com/designcompasslb/'
+        href:'https://www.instagram.com/vfx workslb/'
     },
     {Icon:'https://logospng.org/download/whatsapp/logo-whatsapp-4096.png',href:'https://wa.me/+96103757679'},
   
@@ -36,7 +36,7 @@ const SMicons = ({sx,color}:{color?:string,sx?:any}) => {
            
             </Box>
             <Box fontSize='2em' className='cursor pointer' sx={{width:'50px'}}>
-         <a href='https://www.instagram.com/designcompasslb/' style={{color:'#3d8af7',fill:'#3d8af7'}} className='white' target='_blank' rel='noopener' >
+         <a href='https://www.instagram.com/vfx workslb/' style={{color:'#3d8af7',fill:'#3d8af7'}} className='white' target='_blank' rel='noopener' >
               <CiInstagram></CiInstagram>
          </a>
         

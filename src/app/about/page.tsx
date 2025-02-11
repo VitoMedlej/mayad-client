@@ -47,7 +47,7 @@ const Index = () => {
        
           </Typography>
           <Typography sx={{color:'#4d555e',fontSize:{xs:'.88em',sm:'1em'},pb:.65,maxWidth:'650px'}}>
-At DesignCompass, we believe in the power of design to enhance lives and improve spaces. We work closely with our clients, understanding their needs and desires, to create spaces that are not only aesthetically pleasing but also functional and sustainable.
+At vfx works, we believe in the power of design to enhance lives and improve spaces. We work closely with our clients, understanding their needs and desires, to create spaces that are not only aesthetically pleasing but also functional and sustainable.
          
           </Typography>
           <Typography sx={{color:'#4d555e',fontSize:{xs:'.88em',sm:'1em'},pb:.65,maxWidth:'650px'}}>

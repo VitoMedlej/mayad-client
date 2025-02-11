@@ -10,16 +10,17 @@ import {BsLinkedin,BsInstagram} from 'react-icons/bs'
 const Perks = () => {
     return (
         <Box
-        id='contactsection'
-            className='flexed bg'
+            className='flexed  br'
             sx={{
                 mt: '0',
+                mb:6,
+                mx:'auto',
                 flexWrap: 'wrap',
-                // background:'#f0f0f0',
-                py: '1.5em',
+                background:'#f5f5f5de',
+                py: '3.5em',
                 justifyContent: 'space-evenly',
-                width: '100%',
-                color: 'white'
+                width: '95%',
+                color: 'black'
             }}>
             <Box
                 className='flex'
@@ -31,18 +32,22 @@ const Perks = () => {
                     flexDirection: 'column',
                 }}>
                 <Typography sx={{
-                    fontWeight: '600',
-                    fontSize: '1.7em'
+                    fontWeight: '900',
+                    fontSize: '3em'
                 }}>
-                    CONTACT US TODAY
+                  Get In Touch
                 </Typography>
                 <Typography
-                    className='white'
+                    className='black'
                     sx={{
                         fontSize: '.8em'
                     }}>Reach out to us through any of these support channels</Typography>
             </Box>
-            <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1em' }}>
+            <Box className='items-center' sx={{ display: 'flex', flexWrap: 'wrap',
+                        flexDirection: {xs:'column',sm:'row'}
+                ,
+                
+                justifyContent: 'center', gap: '1em' }}>
                 {/* {[{title:'Phone Number',value:"70873045",isLink:false}, {isLink:true,title:'Instagram',value:'https://www.instagram.com/power_house_european/'}, {isLink:true,title:'Facebook',value:'https://www.facebook.com/online.european.outlet/'}].map(i => {
                     return 
                 })} 
@@ -56,7 +61,7 @@ const Perks = () => {
                         flexDirection: 'row'
                     }}>
                     <Box className='flexed'>
-                        <AiOutlineInstagram  color= '#fff' />
+                        <AiOutlineInstagram  color= 'black' />
                     </Box>
                     <Box
                         sx={{
@@ -86,22 +91,20 @@ sx={{
     gap: '.5em',
     flexDirection: 'row'
 }}>
-<Box className='flexed' sx={{width:'30px',color:'white',filter:'invert(1)'}}>
+<Box className='flexed' sx={{width:'30px',color:'black',filter:'invert(1)'}}>
  
      <img src="https://cdn-icons-png.flaticon.com/512/1946/1946552.png" alt="" className="img" />
 </Box>
 </Box> */}
-
 
                  <Box
 
                     sx={{
                         display: 'flex',
                         gap: '.5em',
-                        flexDirection: 'row'
                     }}>
                     <Box className='flex items-center'>
-                        <BsLinkedin color='#fff' />
+                        <BsLinkedin color='black' />
                     </Box>
                     <Box
                         sx={{
@@ -110,7 +113,7 @@ sx={{
                             justifyContent: 'center',
                             flexDirection: 'column'
                         }}>
-                        {<a className='white' target={`_blank`} style={{textDecoration:"none"}} rel='noreferrer' href={"https://www.linkedin.com/company/68516974/"}>
+                        {<a className='black' target={`_blank`} style={{textDecoration:"none"}} rel='noreferrer' href={"https://www.linkedin.com/company/68516974/"}>
 
 
                             <Typography
@@ -133,7 +136,7 @@ sx={{
                         flexDirection: 'row'
                     }}>
                     <Box className='flex items-center'>
-                        <AiOutlineWhatsApp  color= '#fff' />
+                        <AiOutlineWhatsApp  color= 'black' />
                     </Box>
                     <Box
                         sx={{
@@ -142,7 +145,7 @@ sx={{
                             justifyContent: 'center',
                             flexDirection: 'column'
                         }}>
-                        {<a className='white' target={`_blank`} style={{textDecoration:"none"}} rel='noreferrer' href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`}>
+                        {<a className='black' target={`_blank`} style={{textDecoration:"none"}} rel='noreferrer' href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`}>
 
 
                             <Typography
@@ -165,7 +168,7 @@ sx={{
     flexDirection: 'row'
 }}>
 <Box className='flex items-center'>
-    <BsInstagram  color= '#fff' />
+    <BsInstagram  color= 'black' />
 </Box>
 <Box
     sx={{
@@ -174,7 +177,7 @@ sx={{
         justifyContent: 'center',
         flexDirection: 'column'
     }}>
-    {<a className='white' target={`_blank`} style={{textDecoration:"none"}} rel='noreferrer' href={`https://www.instagram.com/designcompasslb/`}>
+    {<a className='black' target={`_blank`} style={{textDecoration:"none"}} rel='noreferrer' href={`https://www.instagram.com/vfx workslb/`}>
 
 
         <Typography

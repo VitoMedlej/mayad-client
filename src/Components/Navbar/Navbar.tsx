@@ -53,13 +53,13 @@ export default function Navbar() {
     return ( <>
      <Box
      id='navy'
-    className='center relative auto   bg flex'
+    className='center relative auto    flex'
         sx={{
             zIndex:12,
         flexWrap: 'wrap',
                 width:'100%',
                 boxShadow:'none',
-        background:'white',
+        background:'black',
         border: 'none',
         px:0,
         flexGrow: 1
@@ -74,9 +74,8 @@ export default function Navbar() {
 
                 boxShadow:'none',
 
-                background:'white',
+                background:'black',
             // maxWidth: 'lg',
-                width:'100%',
             margin: '0 auto',
         }}>
                
@@ -87,7 +86,7 @@ export default function Navbar() {
 
                 sx={{
                 
-                background:'white',
+                background:'black',
                     maxWidth:'xl',
                 px:'0 !important',
                 
@@ -98,13 +97,13 @@ export default function Navbar() {
 <Box
     sx={{
     mx: {
-        sm: '1em'
+        xs: '1em'
     },
     width:{xs:'80px',sm: '90px'}
 }}>
     <img
-        className='img'
-        src={`https://ucarecdn.com/13297c6a-72ec-4555-8372-965e8531d16f/372688426_120263737816524_8073115919353653137_n.jpg`}
+        className='img filter invert'
+        src={`https://wavescode8cdn.sirv.com/vfxlogo.jpg`}
         alt="design compas  logo"/>
 </Box>
 </Link>
@@ -156,13 +155,13 @@ export default function Navbar() {
                             aria-label="menu"
                             sx={{
                             margin : '8px',padding:0,
-                            color: 'black',
+                            color: 'white',
                             // margin: '0.1em',
                             display: {
                                 md: 'none'
                             }
                         }}>
-                            <IoIosMenu color='black'/>
+                            <IoIosMenu color='white'/>
                         </IconButton>
                    
    {/* <a href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`} target='_blank' className='flex decor-none' rel='noopener'>

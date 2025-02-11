@@ -2,17 +2,18 @@
 import React from 'react'
 import { Box,  Container, Divider, Grid, Typography } from "@mui/material"
 import ContactSection from './ContactSection/ContactSection'
-import HomeProductCollection from './HomeProductCollection/HomeProductCollection'
-import HomeProductsCarousel from './HomeProductsCarousel/HomeProductsCarousel'
 import MainCarousel from './MainCarousel/MainCarousel'
 import { useRouter } from 'next/navigation'
 import Perks from './Perks/Perks'
 import FullscreenPoster from './FullscreenPoster/FullscreenPoster'
 import Testimonials from './Testimonials/Testimonials'
 import Btn from './Btn/Btn'
+import HomeProjects from './HomeComponents/HomeProjects'
+import HomeProjectsRoutes from './HomeComponents/HomeProjectsRoutes'
+import About from './HomeComponents/About'
 
-const 
-PreLoader = ({data,resImages}:any) => {
+const PreLoader = ({data,resImages}:any) => {
+  console.log('data: ', data);
   const router= useRouter();
   
   const textsArray = [
@@ -32,7 +33,7 @@ PreLoader = ({data,resImages}:any) => {
     {
       id: 3,
       title: 'Comprehensive Interior Design Services',
-      desc: 'At DesignCompass, we offer a wide array of services under one roof. Our comprehensive approach ensures that every aspect of your interior design project is handled with professionalism and attention to detail.'
+      desc: 'At vfx works, we offer a wide array of services under one roof. Our comprehensive approach ensures that every aspect of your interior design project is handled with professionalism and attention to detail.'
       ,img:`https://ucarecdn.com/9efff20b-0863-4303-a780-c530dcc8a2a2/3.jpg`
       // ,img :`https://mir-s3-cdn-cf.behance.net/project_modules/1400/a7781657088943.59c8c1ffda2b0.jpg`
     },
@@ -59,17 +60,20 @@ PreLoader = ({data,resImages}:any) => {
       <MainCarousel resImages={resImages}/>
       {/* <Perks/> */}
 
-    <Container maxWidth='lg'   sx={{mb:{xs:3,sm:6,md:8},mt:{xs:0,sm:6,md:8}}}>
-      <Typography sx={{fontSize:{xs:'2em',sm:'2.8em'},maxWidth:'800px',fontWeight:900}} className='center text-center auto '>
-      Excellence in Every Detail with Design Compass Services
+    <Container maxWidth='lg'   sx={{mb:{xs:6,sm:6,md:8},mt:{xs:12,sm:6,md:8}}}>
+      <Typography sx={{fontSize:{xs:'2em',sm:'2.8em'},maxWidth:'800px',fontWeight:900}} className='center white text-center auto '>
+      Excellence in Every Detail with vfx works Services
       </Typography>
-      <Typography sx={{width:'100%',maxWidth:'800px',flex:1,fontSize:{xs:'.8em',sm:'.9em'},fontWeight:300,color:'#4d555e',pt:1.5}} className='center text-center auto'>
-      At DesignCompass, we believe that every space has the potential to become unique, inspirational, and functional. We are committed to transforming your ideas into reality, creating spaces that not only meet your needs but also reflect your personality and style.
+      <Typography sx={{width:'100%',maxWidth:'800px',flex:1,fontSize:{xs:'.8em',sm:'.9em'},
+      fontWeight:300,color:'#4d555e',pt:1.5}} className='center white text-center auto'>
+      At vfx works, we believe that every space has the potential to become unique,
         </Typography>
     </Container>
-
- 
-      <Container id='serv'    sx={{maxWidth:'lg'}} className='flex wrap row justify-between'>
+    {
+        <HomeProjectsRoutes/>
+    }
+    <About/>
+      {/* <Container id='serv'    sx={{maxWidth:'lg'}} className='flex wrap row justify-between'>
 
       {textsArray.map(i=>{
         return <Box key={i.id} className='flex row wrap' sx={{borderBottom:'1px solid white',width:{xs:'98%'},maxWidth:'lg',justifyContent:'space-between',my:5.5}} >
@@ -128,9 +132,9 @@ PreLoader = ({data,resImages}:any) => {
           </Box>
         })
         }
-    </Container>
+    </Container> */}
 
-    <Grid  sx={{width:'100%',pt:6}} container>
+    {/* <Grid  sx={{width:'100%',pt:6}} container>
     <Grid  maxWidth='lg' item xs={12} sm={6}>
       <Box sx={{height:'500px',maxWidth:'450px'}} className='auto'>
         <img src="https://ucarecdn.com/a25b1349-8f3b-408d-8c44-e00ad9752c0e/photo_5832586041058509575_y.jpg" alt="" className="img" />
@@ -145,7 +149,7 @@ PreLoader = ({data,resImages}:any) => {
         Crafting Spaces with Precision and Passion
         </Typography>
         <Typography sx={{width:'100%',maxWidth:'500px',flex:1,fontSize:{xs:'.8em',sm:'.9em'},fontWeight:300,color:'#4d555e',mt:2}} className=''>
-        Welcome to DesignCompass, your trusted Interior Design Studio in Lebanon. We are committed to creating spaces that inspire, resonate, and transform.
+        Welcome to vfx works, your trusted Interior Design Studio in Lebanon. We are committed to creating spaces that inspire, resonate, and transform.
         </Typography>
         <Btn className='color' sx={{width:'100px',color:'black',mt:2,px:0}}>
           Reach Us
@@ -155,7 +159,7 @@ PreLoader = ({data,resImages}:any) => {
     </Grid>
    
    
-    </Grid>
+    </Grid> */}
  
 
 
@@ -184,8 +188,6 @@ PreLoader = ({data,resImages}:any) => {
         </Box>
       </Container> */}
         
-          {/* <Divider light></Divider> */}
-          <Testimonials/>
       
       
       {/* <Container  id='gallery' className='wrap row  center auto flex' sx={{background:'white',alignItems:'left',px:{sm:1},py:{xs:3,sm:12},display:'flex'}}>
@@ -194,7 +196,7 @@ PreLoader = ({data,resImages}:any) => {
             </Typography>
          
           <a className='center text-center auto' target='_blank' rel='noreferrer' href={`
-https://www.instagram.com/designcompasslb/`}>
+https://www.instagram.com/vfx workslb/`}>
 
 <Typography 
 className=' cursor center flex gap1 black decor-none '
@@ -205,7 +207,7 @@ mb:4,
 alignItems: 'center',
 
 fontWeight:400,fontSize:{xs:'.76em',sm:'.95em'}}}>
-@design__compass
+@vfx_works
 </Typography>
   </a>
         <Box className='flex row wrap' sx={{justifyContent:'space-between'}}>

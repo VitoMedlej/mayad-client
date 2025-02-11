@@ -30,7 +30,7 @@ const Testimonial = () => {
 const tests =[
   {
     reviewer: "Eva Sayegh",
-    description: "One of the most creative, professional and talented teams I ever dealt with. Design Compass managed to offer perfect and flawless designs to properties located outside of Lebanon virtually as if the whole team was physically available on site. The expert touch and vision of the head designer Mr. Omar makes all the difference. I highly recommend their services."
+    description: "One of the most creative, professional and talented teams I ever dealt with. vfx works managed to offer perfect and flawless designs to properties located outside of Lebanon virtually as if the whole team was physically available on site. The expert touch and vision of the head designer Mr. Omar makes all the difference. I highly recommend their services."
   },
   {
     reviewer: "Fadi Dinnawi",
@@ -54,11 +54,11 @@ const tests =[
   },
   {
     reviewer: "Sahar Ramadan",
-    description: "Design compass you are the best!!!!! Everything was easy and smooth, trust worthy, paying attention to every single detail from A to Z, don't hesitate to ask them anything, even if you have 10000 questions! Highly recommended."
+    description: "vfx works you are the best!!!!! Everything was easy and smooth, trust worthy, paying attention to every single detail from A to Z, don't hesitate to ask them anything, even if you have 10000 questions! Highly recommended."
   },
   {
     reviewer: "Soha Daroub",
-    description: "Thank you Design Compass represented by its owner Omar M Etal. My room is a joy to be in and can't wait for this lock down to end so we can start with the second bedroom.  Great design and immaculate execution, wonderful staff and service.  Easy and comfortable to work with. Thank you guys for everything ❤"
+    description: "Thank you vfx works represented by its owner Omar M Etal. My room is a joy to be in and can't wait for this lock down to end so we can start with the second bedroom.  Great design and immaculate execution, wonderful staff and service.  Easy and comfortable to work with. Thank you guys for everything ❤"
   }
 ];
     

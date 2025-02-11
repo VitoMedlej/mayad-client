@@ -8,10 +8,10 @@ import QuickCart from '@/Components/Shared/QuickCart/QuickCart'
 import ContextWrapper from '@/context/Contexts'
 
 export const metadata = {
-    title: 'DesignCompass: Elevating Interior Design in Lebanon',
-    description: `Discover the artistry and innovation of DesignCompass, your premier interior design firm in Lebanon. We transform spaces into masterpieces`,
+    title: 'vfx works: Elevating Interior Design in Lebanon',
+    description: `Discover the artistry and innovation of vfx works, your premier interior design firm in Lebanon. We transform spaces into masterpieces`,
     icons: {
-        icon: `https://ucarecdn.com/f21fe250-e19c-4fd7-b4e7-bf1b246a3640/favicon.jpeg`
+        icon: `https://wavescode8cdn.sirv.com/vfxlogo.jpg`
     }
 }
 
@@ -26,13 +26,13 @@ export default function RootLayout({children} : {
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"/>
             </head>
 
-            <body className='relative'>
+            <body className='relative bg2'>
 
                 <ContextWrapper>
                     <Navbar/>
                     <Sidebar cates={undefined}/>
                     <QuickCart/>
-                    <ScrollToTop/>
+                    {/* <ScrollToTop/> */}
                     <main >
 
                      {children}

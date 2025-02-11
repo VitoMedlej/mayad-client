@@ -45,7 +45,7 @@ export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
       >
         <Box>
           <Typography sx={{fontWeight:800}}>
-            Sidebar Menu
+          VFX Works Studio
           </Typography>
         </Box>
 
@@ -68,7 +68,7 @@ export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
               <ListItemButton sx={{py:1.5}} >
             
                   <Typography sx={{fontWeight:600}}>
-             Home
+             HOME
             </Typography>
             </ListItemButton>
   
@@ -77,12 +77,12 @@ export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
           <ListItem
           sx={{fontWeight:600}}
 
-          onClick={()=>{router.push(`/#contactsection`); toggleDrawer(false)}}
+          onClick={()=>{router.push(`/work`); toggleDrawer(false)}}
            disablePadding>
               <ListItemButton sx={{py:1.5}} >
             
                   <Typography sx={{fontWeight:600}}>
-             Contact Us
+             WORK
             </Typography>
             </ListItemButton>
   
@@ -91,12 +91,12 @@ export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
       <ListItem
           sx={{fontWeight:600}}
 
-          onClick={()=>{router.push(`/portfolio`); toggleDrawer(false)}}
+          onClick={()=>{router.push(`/work/cgi`); toggleDrawer(false)}}
            disablePadding>
               <ListItemButton sx={{py:1.5}} >
             
                   <Typography sx={{fontWeight:600}}>
-             Our Projects
+             CGI WORK
             </Typography>
             </ListItemButton>
   
@@ -105,12 +105,26 @@ export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
           <ListItem
           sx={{fontWeight:600}}
 
+          onClick={()=>{router.push(`/work/animations`); toggleDrawer(false)}}
+           disablePadding>
+              <ListItemButton sx={{py:1}} >
+            
+                  <Typography sx={{fontWeight:600}}>
+             ANIMATIONS
+            </Typography>
+            </ListItemButton>
+  
+
+          </ListItem>
+          <ListItem
+          sx={{fontWeight:600}}
+
           onClick={()=>{router.push(`/about`); toggleDrawer(false)}}
            disablePadding>
               <ListItemButton sx={{py:1}} >
             
                   <Typography sx={{fontWeight:600}}>
-             About
+             ABOUT & SERVICES
             </Typography>
             </ListItemButton>
   

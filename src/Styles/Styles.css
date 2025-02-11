@@ -13,8 +13,8 @@ body {
   width: 100%;
 }
 
-.color3 {
-  color: #f27a23 !important;
+.br {
+  border-radius: 12px;
 }
 
 .img {
@@ -29,15 +29,15 @@ body {
 }
 
 .bg2 {
-  background: #7fbf44 !important;
+  background: #0f0f0f !important;
 }
 
 .borderColor {
-  border-color: #0273b5 !important;
+  border-color: #3d8af7 !important;
 }
 
 .borderColor2 {
-  border-color: #7fbf44 !important;
+  border-color: #0f0f0f !important;
 }
 
 .rounded {
@@ -45,11 +45,11 @@ body {
 }
 
 .color2 {
-  color: #7fbf44 !important;
+  color: #0f0f0f !important;
 }
 
 .color {
-  color: #0273b5 !important;
+  color: #3d8af7 !important;
 }
 
 .flex {
@@ -72,6 +72,10 @@ body {
   justify-content: space-evenly;
 }
 
+.space-around {
+  justify-content: space-around;
+}
+
 .hover-shadow:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -89,7 +93,7 @@ body {
 }
 
 .bg {
-  background: #0273b5 !important;
+  background: #3d8af7 !important;
 }
 
 .white {
@@ -102,6 +106,10 @@ body {
 
 .gap1 {
   gap: 0.25em;
+}
+
+.gap2 {
+  gap: 0.5em;
 }
 
 .absolute {
@@ -142,7 +150,7 @@ button[disabled] {
 }
 
 .clr {
-  color: #0273b5 !important;
+  color: #3d8af7 !important;
 }
 
 .auto {

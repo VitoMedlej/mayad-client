@@ -13,7 +13,7 @@ export async function GET(req : NextRequest, res : NextApiResponse) {
       
     }
     const ProductsCollection = await client
-    .db("CMPS")
+    .db("MAYAD")
     .collection("Products");
 
     const product = await ProductsCollection
